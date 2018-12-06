@@ -6,5 +6,6 @@ install:
   - pip install matplotlib
   - pip install -r requirements.txt
 script:
+  - ./fetch-data.sh
   - pytest
   - flake8 --exclude=.git,__pycache__,env --max-line-length=150
